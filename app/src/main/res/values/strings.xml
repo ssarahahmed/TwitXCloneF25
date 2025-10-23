@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">TwitXClone</string>
+    <string name="login_label">Username</string>
+    <string name="signup_label">Sign Up</string>
+    <string name="pass_label">Password</string>
+    <string name="send_bttn">Send</string>
+    <string name="write_msg">Message Here</string>
+    <string name="dob_label">DOB</string>
+    <string name="user_label">User</string>
 </resources>

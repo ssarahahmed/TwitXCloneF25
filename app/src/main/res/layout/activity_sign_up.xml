@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/user_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="108dp"
+        android:text="@string/user_label"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/user_field"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/user_label"
+        app:layout_constraintStart_toEndOf="@+id/user_label" />
+
+    <TextView
+        android:id="@+id/pass_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="59dp"
+        android:text="@string/pass_label"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/user_label"
+        app:layout_constraintTop_toBottomOf="@+id/user_label" />
+
+    <EditText
+        android:id="@+id/pass_field"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pass_label"
+        app:layout_constraintStart_toEndOf="@+id/pass_label" />
+
+    <EditText
+        android:id="@+id/dob_field"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dob_label"
+        app:layout_constraintStart_toEndOf="@+id/dob_label" />
+
+    <TextView
+        android:id="@+id/dob_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/dob_label"
+        app:layout_constraintStart_toStartOf="@+id/pass_label"
+        app:layout_constraintTop_toBottomOf="@+id/pass_field" />
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="onSignUp"
+        android:text="@string/signup_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dob_field" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
